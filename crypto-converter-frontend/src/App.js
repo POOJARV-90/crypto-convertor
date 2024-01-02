@@ -14,7 +14,7 @@ function App() {
 
   useEffect(() => {
     
-    axios.get('http://server-site-backend.onrender.com/cryptocurrencies')
+    axios.get('https://server-site-backend.onrender.com/cryptocurrencies')
       .then(response => setCryptos(response.data))
       .catch(error => console.error('Error fetching cryptocurrencies:', error));
 
@@ -32,7 +32,7 @@ function App() {
     e.preventDefault();
 
    
-    axios.get('http://server-site-backend.onrender.com/convert', {
+    axios.get('https://server-site-backend.onrender.com/convert', {
       params: {
         sourceCrypto,
         amount,
